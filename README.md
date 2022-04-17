@@ -30,14 +30,20 @@
   <h3>✔️Predict the values of X_test (test data) by passing in estimator</h3><br>
   ▶️<i>y_pred=lm.predict(X_test)</i>
   <h3>✔️Calculate the slope and intercept values</h3><br>
-  ▶️<i>a=lm.coef_</i>
-  ▶️<i>b=lm.intercept_</i>
+  ▶️<i>a=lm.coef_</i><br>
+  ▶️<i>b=lm.intercept_</i><br>
  <h3>✔️Calculate the root mean square error:</h3><br>
-    ▶️<i>from sklearn.metrics import mean_squared_error</i>
-  ▶️<i>rmse=np.sqrt(mean_squared_error(y_pred,y_test))</i>
+    ▶️<i>from sklearn.metrics import mean_squared_error</i><br>
+  ▶️<i>rmse=np.sqrt(mean_squared_error(y_pred,y_test))</i><br>
 <h3>✔️Calculate the R2 square: </h3><br>
-  ▶️<i>from sklearn.metrics import r2_score</i>
-  ▶️ <i>r2_score(y_test,y_pred)</i>
+  ▶️<i>from sklearn.metrics import r2_score</i><br>
+  ▶️ <i>r2_score(y_test,y_pred)</i><br>
+   <h3>✔️Check for the residual error in model for train and test data</h3><br>
+    ▶️<i>y_pred_train=lm.predict(X_train)</i><br>
+     ▶️<i>train_residual= y_pred_train - y_train</i><br>
+       ▶️<i>y_pred_test=lm.predict(X_test)</i><br>
+   ▶️<i>test_residual=y_pred_test -y_test</i><br>
+    
   
   
   
